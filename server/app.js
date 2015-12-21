@@ -1,20 +1,32 @@
-var sp = require("serialport");
-var SerialPort = require("serialport").SerialPort;
-var serialPort = new SerialPort("/dev/ttyACM0", {
-  baudrate: 9600
+//Variables
+var portname = process.argv[2];
+
+//Dependencies
+var colors = require('colors');
+var serialPort = require('serialport');
+var SerialPort = serialPort.SerialPort; //localized
+
+var myPort = new SerialPort(portname, {
+  baudrate: 9600,
+  parser:serialPort.parsers.readline("\r\n")
 });
 
-serialPort.on("open", function () {
-  console.log('open');
-  serialPort.on('data', function(data) {
-    console.log('data received: ' + data);
-  });
-});
-
-sp.list(function (err, ports) {
+serialPort.list(function (err, ports) {
+  console.log(colors.red.underline("Connections"));
   ports.forEach(function(port) {
-    console.log("Com name: " + port.comName);
-    console.log(port.pnpId);
-    console.log(port.manufacturer);
+    console.log("Com Name: ".red + port.comName);
+    console.log("Manufacturer: ".red + port.manufacturer);
+    console.log("------------------");
   });
 });
+
+myPort.on('open', onOpen); 
+myPort.on('data', onData);
+
+function onOpen() {
+  console.log('Serial port connections open.'.green);
+};
+
+function onData(data) {
+  console.log('data received: ' + data);
+}
