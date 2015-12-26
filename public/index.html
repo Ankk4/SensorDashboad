@@ -11,14 +11,18 @@
 </head>
 <body ng-controller = "DashboardController as dashboard">
 	<div>
-		<h1></h1>
-		<h1></h1>
-		<h1></h1>
+		<h1>Hello World!</h1>
+		<h2>Welcome to N.H.K!</h2>
 	</div>
-
+	
+	<div>
+		<ul>
+			<li ng-repeat="sens in sensors">{{sens.name}}</li>
+		</ul>
+	</div>
+	
+	<div ng-repeat="sens in sensors">
+		<p ng-show=sens.dashboard>{{sens}}</p>
+	</div>
 </body>
 </html>
-
-http://campus.codeschool.com/courses/shaping-up-with-angular-js/level/1/section/2/our-first-controller
-http://campus.codeschool.com/courses/shaping-up-with-angular-js/level/1/section/2/our-first-controller
-http://campus.codeschool.com/courses/shaping-up-with-angular-js/level/1/section/2/our-first-controller
