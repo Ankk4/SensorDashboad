@@ -2,8 +2,8 @@ var express = require('express'),
 	app		= express();
 
 app
-	.use(express.static('../public'))
+	.use(express.static(__dirname + '/public'))
 	.get('*', function (req, res) {
-		res.sendFile('/public/main.html');
+		res.sendFile(__dirname + '/public/main.html');
 	})
 	.listen(7000);

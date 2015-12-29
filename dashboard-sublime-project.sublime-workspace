@@ -1,0 +1,692 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"pad",
+				"padding"
+			],
+			[
+				"pos",
+				"position"
+			],
+			[
+				"mar",
+				"margin-left"
+			],
+			[
+				"margin",
+				"margin-left"
+			],
+			[
+				"padding",
+				"padding-top"
+			],
+			[
+				"ba",
+				"background-color"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"paddi",
+				"padding-bottom"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"serialPort",
+				"serialPortConnection"
+			],
+			[
+				"paddin",
+				"padding"
+			],
+			[
+				"font",
+				"font-style"
+			],
+			[
+				"mag",
+				"margin-bottom"
+			],
+			[
+				"fireBu",
+				"fireBullet"
+			],
+			[
+				"angu",
+				"angularVelocity"
+			],
+			[
+				"new",
+				"newVelocity"
+			],
+			[
+				"ball",
+				"ball"
+			],
+			[
+				"play",
+				"playerHitball"
+			],
+			[
+				"bul",
+				"bulletHitBall"
+			],
+			[
+				"reset",
+				"resetBullet"
+			],
+			[
+				"sp",
+				"speed"
+			],
+			[
+				"player",
+				"player"
+			],
+			[
+				"Pla",
+				"playerCollisionGroup"
+			],
+			[
+				"bal",
+				"ballCollisionGroup"
+			],
+			[
+				"rotation",
+				"rotationSpeed"
+			],
+			[
+				"button",
+				"buttonDownID"
+			],
+			[
+				"res",
+				"res"
+			],
+			[
+				"mes",
+				"message"
+			],
+			[
+				"ms",
+				"message"
+			],
+			[
+				"message",
+				"messages"
+			],
+			[
+				"me",
+				"messages"
+			],
+			[
+				"puhe",
+				"puhePatteri"
+			],
+			[
+				"socket",
+				"socket"
+			],
+			[
+				"socke",
+				"socket"
+			],
+			[
+				"marg",
+				"margin-left"
+			],
+			[
+				"padd",
+				"padding"
+			],
+			[
+				"tex",
+				"text-align"
+			],
+			[
+				"in",
+				"inline"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"Bac",
+				"background-color"
+			],
+			[
+				"tar",
+				"target_file"
+			],
+			[
+				"upload",
+				"uploadOk"
+			],
+			[
+				"uploa",
+				"uploadOk"
+			],
+			[
+				"tra",
+				"target_file"
+			],
+			[
+				"targe",
+				"target_dir"
+			],
+			[
+				"file",
+				"file"
+			],
+			[
+				"time",
+				"timestamp"
+			],
+			[
+				"vali",
+				"validateAge"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"password",
+				"password"
+			],
+			[
+				"validate",
+				"validatePassword"
+			],
+			[
+				"First",
+				"firstname"
+			],
+			[
+				"rig",
+				"right"
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"ri",
+				"right"
+			],
+			[
+				"are",
+				"areaOfRectanlge"
+			],
+			[
+				"w",
+				"width"
+			],
+			[
+				"fu",
+				"function"
+			],
+			[
+				"date",
+				"dateString"
+			],
+			[
+				"getM",
+				"getMinutes"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "app/public/main.html",
+			"settings":
+			{
+				"buffer_size": 1698,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/public/css/my.css",
+			"settings":
+			{
+				"buffer_size": 982,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 78.0,
+		"last_filter": "Snippet: footer",
+		"selected_items":
+		[
+			[
+				"Snippet: footer",
+				"Snippet: bs3-panel-footer"
+			],
+			[
+				"Snippet: bs3 ju",
+				"Snippet: bs3-jumbotron"
+			],
+			[
+				"Snippet: nav",
+				"Snippet: bs3-navbar-static-top"
+			],
+			[
+				"Snippet: navi",
+				"Snippet: bs3-navbar-link"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"package",
+				"Package Control: Discover Packages"
+			],
+			[
+				"pacc",
+				"Package Control: Add Repository"
+			],
+			[
+				"Snippet: ",
+				"Snippet: #!/usr/bin/env"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"Snippet: in",
+				"Snippet: CSS - margin: 0;"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"jsh",
+				"JSHint"
+			],
+			[
+				"Remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"sola",
+				"Preferences: SolarizedToggle Settings – User"
+			],
+			[
+				"Install ",
+				"Package Control: Install Package"
+			],
+			[
+				"jshi",
+				"JSHint"
+			],
+			[
+				"jshint",
+				"JSHint"
+			],
+			[
+				"insta ",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 534.0
+	},
+	"console":
+	{
+		"height": 160.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/J/Työt & Materiaalit/Projektit/IoT/SensorDashboard/app",
+		"/J/Työt & Materiaalit/Projektit/IoT/SensorDashboard/app/public"
+	],
+	"file_history":
+	[
+		"/D/Ohjelmat/Sublime Text 3/Data/Packages/User/Default (Windows).sublime-keymap",
+		"/J/Työt & Materiaalit/Projektit/IoT/SensorDashboard/app/public/js/app.js",
+		"/D/Ohjelmat/Sublime Text 3/Data/Packages/User/Preferences.sublime-settings",
+		"/J/Työt & Materiaalit/Projektit/IoT/SensorDashboard/app/public/main.html",
+		"/J/Työt & Materiaalit/Projektit/IoT/SensorDashboard/app/server.js",
+		"/J/Työt & Materiaalit/Projektit/IoT/SensorDashboard/app/serialApp.js",
+		"/J/Työt & Materiaalit/Projektit/Cluster Website/cluster-website/default-app/app.js",
+		"/J/Työt & Materiaalit/Projektit/Cluster Website/cluster-website/Toimiva tetris APP/app-tetris/app.js",
+		"/J/Työt & Materiaalit/Projektit/Cluster Website/cluster-website/Toimiva tetris APP/proxy.js",
+		"/J/Työt & Materiaalit/Projektit/Cluster Website/cluster-website/proxy/proxy.js",
+		"/J/Työt & Materiaalit/Projektit/Cluster Website/cluster-website/app-ogar/index.js",
+		"/J/Työt & Materiaalit/Projektit/Cluster Website/cluster-website/app-ogar/app.js",
+		"/J/Työt & Materiaalit/Projektit/IoT/SensorDashboard/app/public/js/bootstrap.min.js",
+		"/J/Työt & Materiaalit/Projektit/IoT/SensorDashboard/server/serialApp.js",
+		"/J/Työt & Materiaalit/Projektit/IoT/SensorDashboard/public/main.html",
+		"/J/Työt & Materiaalit/Projektit/IoT/SensorDashboard/public/js/app.js",
+		"/J/Työt & Materiaalit/Projektit/IoT/SensorDashboard/server/server.js",
+		"/J/Työt & Materiaalit/Projektit/IoT/SensorDashboard/public/index.html",
+		"/J/Työt & Materiaalit/Projektit/IoT/SensorDashboard/server/app.js",
+		"/J/Työt & Materiaalit/Projektit/NodeJS/loginApp-own-tls/server.js",
+		"/J/Työt & Materiaalit/Projektit/NodeJS/loginApp-own-tls/master.js",
+		"/J/Työt & Materiaalit/Projektit/NodeJS/loginApp-own/server.js",
+		"/J/Työt & Materiaalit/Projektit/NodeJS/potatoBot/client.js",
+		"/J/Työt & Materiaalit/Projektit/NodeJS/potatoBot/main.js",
+		"/J/Työt & Materiaalit/Projektit/NodeJS/learnyounode-scripts/mod.js",
+		"/J/Työt & Materiaalit/Projektit/NodeJS/learnyounode-scripts/module.js",
+		"/C/Users/dc13anteroj/Desktop/joiajds.html",
+		"/C/Users/Antero/Desktop/proxy/proxy.js",
+		"/H/Työt & Materiaalit/Projektit/Cluster Website/cluster-webservers/tetris-app/app.js",
+		"/H/Työt & Materiaalit/Projektit/Cluster Website/cluster-webservers/proxy/proxy.js",
+		"/H/Työt & Materiaalit/Projektit/Cluster Website/cluster-webservers/default-app/app.js",
+		"/H/Työt & Materiaalit/Projektit/Cluster Website/cluster-webservers/app-tetris/app.js",
+		"/H/Työt & Materiaalit/Projektit/Cluster Website/cluster-webservers/app-default/app.js",
+		"/I/Mini-Opari/cluster-webservers/app-default/app.js",
+		"/I/Mini-Opari/cluster-webservers/app-tetris/app.js",
+		"/H/Työt & Materiaalit/Projektit/NodeJS/cluster/app/app.js",
+		"/H/Työt & Materiaalit/Projektit/NodeJS/cluster/app/package.json",
+		"/H/Työt & Materiaalit/Projektit/NodeJS/cluster/proxy/proxy.js",
+		"/H/Työt & Materiaalit/Projektit/NodeJS/cluster/proxy/proxy2.js",
+		"/H/Työt & Materiaalit/Projektit/HighlyResponsive/highlyresponsive-forever/public/index.html",
+		"/H/Työt & Materiaalit/Amk/NodeJS/loginApp-own/public/index.html",
+		"/H/Työt & Materiaalit/Projektit/Portfolio/enhanced/index.html",
+		"/H/Työt & Materiaalit/Projektit/Portfolio/enhanced/css/styles.css",
+		"/C/Users/Antero/Desktop/index.html",
+		"/C/Users/Antero/Desktop/test.html",
+		"/H/Työt & Materiaalit/Projektit/Portfolio/static/css/styles.css",
+		"/H/Työt & Materiaalit/Projektit/Portfolio/static/index.html",
+		"/H/Työt & Materiaalit/Projektit/AR Drone/Scripts/ps3-drone/public/index.html",
+		"/H/Työt & Materiaalit/Projektit/Portfolio/css/styles.css",
+		"/H/Työt & Materiaalit/Projektit/Portfolio/index.html",
+		"/H/Työt & Materiaalit/Projektit/HighlyResponsive/highlyresponsive-forever/public/js/game.js",
+		"/H/Työt & Materiaalit/Projektit/potatoBot/client.js",
+		"/H/Työt & Materiaalit/Projektit/potatoBot/config.js",
+		"/H/Työt & Materiaalit/Projektit/potatoBot/main.js",
+		"/H/Työt & Materiaalit/Projektit/potatoBot/messages.json",
+		"/H/Työt & Materiaalit/Projektit/HighlyResponsive/highlyresponsive-forever/README.md",
+		"/H/Työt & Materiaalit/Projektit/HighlyResponsive/highlyresponsive-forever/public/js/filter.js",
+		"/H/Työt & Materiaalit/Projektit/HighlyResponsive/highlyresponsive-forever/public/js/test.html",
+		"/H/Työt & Materiaalit/Projektit/HighlyResponsive/highlyresponsive-forever/public/js/three_test.js",
+		"/H/Työt & Materiaalit/Projektit/HighlyResponsive/highlyresponsive-forever/public/js/three.min.js",
+		"/H/Työt & Materiaalit/Projektit/HighlyResponsive/highlyresponsive-forever/public/js/plasma.js",
+		"/H/Työt & Materiaalit/Projektit/HighlyResponsive/highlyresponsive-forever/public/js/gl.js",
+		"/C/Users/Antero/Desktop/html5-ia-master/ch6/game.js",
+		"/C/Users/Antero/Desktop/html5-ia-master/ch6/index.html",
+		"/H/Työt & Materiaalit/Projektit/HighlyResponsive/highlyresponsive-forever/public/js/phaser.js",
+		"/H/Työt & Materiaalit/Projektit/HighlyResponsive/public/js/test.html",
+		"/H/Työt & Materiaalit/Projektit/HighlyResponsive/public/js/plasma.js",
+		"/H/Työt & Materiaalit/Projektit/HighlyResponsive/public/js/game.js",
+		"/J/AR Drone/Scripts/navdata_example.js",
+		"/J/AR Drone/Scripts/pianoControls.js",
+		"/J/AR Drone/Scripts/test.js",
+		"/J/AR Drone/Scripts/ps3-drone/public/index.html",
+		"/J/AR Drone/Scripts/ps3-drone/public/js/padwrap.js",
+		"/J/AR Drone/Scripts/ps3-drone/server.js",
+		"/H/Työt & Materiaalit/Projektit/HighlyResponsive/public/index.html",
+		"/H/Työt & Materiaalit/Projektit/HighlyResponsive/public/js/index.html",
+		"/H/Työt & Materiaalit/Projektit/HighlyResponsive/public/js/phaser.js",
+		"/J/AR Drone/ardrone/main.js",
+		"/J/portfolio-master/css/styles.css",
+		"/J/portfolio-master/cv.html",
+		"/J/portfolio-master/portfolio.html",
+		"/J/portfolio-master/index.html",
+		"/H/Työt & Materiaalit/Projektit/PerunaBot/server.js",
+		"/H/Työt & Materiaalit/Projektit/Prisoners dilemma/server.js",
+		"/J/Portfolio/index.html",
+		"/J/Portfolio/css/styles.css",
+		"/H/Ohjelmat/wamp/www/PHP/upload1.php",
+		"/H/Ohjelmat/wamp/www/PHP/upload.html",
+		"/H/Ohjelmat/wamp/www/PHP/task6_anterojuutinen.php",
+		"/H/Ohjelmat/wamp/www/PHP/task5_anterojuutinen.php",
+		"/J/JavaScript/index.html",
+		"/J/JavaScript/task7.js",
+		"/J/JavaScript/style.css",
+		"/J/JavaScript/task7",
+		"/H/Ohjelmat/wamp/www/PHP/library.php",
+		"/H/Ohjelmat/wamp/www/PHP/task6_anterojuutinen",
+		"/H/Ohjelmat/wamp/www/PHP/task4_anterojuutinen.php",
+		"/H/Työt & Materiaalit/Projektit/NodeJS/learnyounode-scripts/timeserver.js"
+	],
+	"find":
+	{
+		"height": 47.0
+	},
+	"find_in_files":
+	{
+		"height": 102.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"text",
+			"row",
+			"w",
+			"wrap",
+			"wrapper",
+			"ball.body.velocity.",
+			"minspeed",
+			"ball.speed",
+			"bullet",
+			"keys",
+			"cursors",
+			"function",
+			"player",
+			"$",
+			"element",
+			"getElem",
+			"document",
+			"type",
+			"canvasId",
+			"panda",
+			"#",
+			");\n",
+			"margin",
+			"100%",
+			"border",
+			"wrapper",
+			"client",
+			"text-al"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"cursors",
+			"keys",
+			"bot"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"folders":
+	[
+		{
+			"path": "J:\\Työt & Materiaalit\\Projektit\\IoT\\SensorDashboard\\app"
+		}
+	],
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "app/public/main.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1698,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								978,
+								978
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 216.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/public/css/my.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 982,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								118,
+								118
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 35.0
+	},
+	"input":
+	{
+		"height": 38.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "",
+	"replace":
+	{
+		"height": 66.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 226.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
