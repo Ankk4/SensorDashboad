@@ -1,7 +1,4 @@
 //Serial port module
-//temp variable
-var portname = "/dev/ttyACM0";
-
 //Dependencies
 var colors = require('colors');
 var serialPort = require('serialport');
@@ -23,17 +20,12 @@ function serialPortConnection (portname) {
     });
   });
 
-  myPort.on('open', onOpen); 
-  myPort.on('data', onData);
-
-  function onOpen() {
-    console.log('Serial port connections open.'.green);
-  };
-
-  function onData(data) {
-    console.log('data received: ' + data);
-  }
+  myPort.on('open', onOpen);
+  return myPort;
 }
 
+function onOpen() {
+  console.log('Serial port connections open.'.green);
+};
 module.exports.serialPortConnection = serialPortConnection;
 

@@ -6,23 +6,26 @@
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/my.css" rel="stylesheet">
 	<script type="js/respond.min.js"></script>
+	<script type="text/javascript" src="d3/d3.v3.js"></script>
+	<script type="text/javascript" src="d3/myd3.js"></script>
 	<title>Sensor Dashboard</title>
 </head>
-<body ng-controller = 'DashboardController as dashboard'>
+<body ng-controller = 'DashboardController as dashboard' data-spy="scroll" data-target="#sidebar">
 	<!-- Header -->
-	<div class="page-header">
+	<div class="page-header row">
 		<div class="container" style="margin: 0;">
 			<h3>Welcome our new robot overlords</h3>
-			<p>You are already dead</p>
+			<p>You are already dead.
 		</div>
 	</div>
 	<!-- Sidebar -->
 	<div class="col-xs-4 col-sm-3 col-md-3 sidebar-offcanvas" id="sidebar" role="navigation">
 		<ul class="nav">
-			<li>Dashboard</li>
-			<li>Raw Data</li>
-			<li>Devices</li>
-			<li>Camera</li>
+			<li><a href="#Dashboard">Dashboard</a></li>
+			<li><a href="#RawData">Raw Data</a></li>
+			<li><a href="#Devices">Devices</a></li>
+			<li><a href="#Camera">Camera</a></li>
+			<li><a href="#About">About</a></li>
 		</ul>
 	</div>
 	<!-- Content -->
@@ -34,10 +37,10 @@
 		</div>
 	</div>
 	<!-- Footer -->
-	<div class="navbar navbar-fixed-bottom footer">
+	<div class="navbar navbar-fixed-bottom footer row">
 		<div class="panel panel-default text-center footer">
 			<div class="panel-footer" >
-				<a href="http://www.wtfpl.net/"><img src="http://www.wtfpl.net/wp-content/uploads/2012/12/wtfpl-badge-4.png" width="80" height="15" alt="WTFPL" /> © 2015 WTFPL – Do What the Fuck You Want to Public License.</a>
+				<a href="http://www.wtfpl.net/"><img src="http://www.wtfpl.net/wp-content/uploads/2012/12/wtfpl-badge-4.png" width="80" height="15" alt="WTFPL" /> © 2015 WTFPL – Do What the Fuck You Want to Public License. Build by Antero Juutinen.</a>
 			</div>
 		</div>
 	</div>
