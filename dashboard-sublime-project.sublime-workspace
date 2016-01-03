@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"pad",
+				"padding-top"
+			],
+			[
+				"padd",
+				"padding-right"
+			],
+			[
 				"lig",
 				"lightLevel"
 			],
@@ -14,10 +22,6 @@
 			[
 				"seria",
 				"serialConnections"
-			],
-			[
-				"pad",
-				"padding"
 			],
 			[
 				"pos",
@@ -156,10 +160,6 @@
 				"margin-left"
 			],
 			[
-				"padd",
-				"padding"
-			],
-			[
 				"tex",
 				"text-align"
 			],
@@ -260,19 +260,27 @@
 	"buffers":
 	[
 		{
-			"file": "/J/Työt & Materiaalit/Projektit/IoT/Arduino/sensors/sensors.ino",
+			"file": "app/server.js",
 			"settings":
 			{
-				"buffer_size": 1165,
-				"line_ending": "Unix"
+				"buffer_size": 992,
+				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "/J/Työt & Materiaalit/Projektit/IoT/Arduino/USK Guide Code/Circuit_07/Circuit_07.ino",
+			"file": "app/serialApp.js",
 			"settings":
 			{
-				"buffer_size": 6313,
-				"line_ending": "Unix"
+				"buffer_size": 815,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/config.json",
+			"settings":
+			{
+				"buffer_size": 128,
+				"line_ending": "Windows"
 			}
 		}
 	],
@@ -385,27 +393,32 @@
 	},
 	"expanded_folders":
 	[
-		"/J/Työt & Materiaalit/Projektit/IoT/SensorDashboard/app"
+		"/J/Työt & Materiaalit/Projektit/IoT/SensorDashboard",
+		"/J/Työt & Materiaalit/Projektit/IoT/SensorDashboard/app",
+		"/J/Työt & Materiaalit/Projektit/IoT/SensorDashboard/app/public",
+		"/J/Työt & Materiaalit/Projektit/IoT/SensorDashboard/app/public/views"
 	],
 	"file_history":
 	[
+		"/J/Työt & Materiaalit/Projektit/IoT/SensorDashboard/app/public/main.html",
+		"/J/Työt & Materiaalit/Projektit/IoT/SensorDashboard/app/public/css/my.css",
+		"/J/Työt & Materiaalit/Projektit/IoT/SensorDashboard/app/server.js",
+		"/J/Työt & Materiaalit/Projektit/IoT/SensorDashboard/README.md",
+		"/J/Työt & Materiaalit/Projektit/IoT/Arduino/sensors/sensors.ino",
+		"/J/Työt & Materiaalit/Projektit/IoT/Arduino/USK Guide Code/Circuit_07/Circuit_07.ino",
 		"/J/Työt & Materiaalit/Projektit/IoT/Arduino/USK Guide Code/Circuit_05/Circuit_05.ino",
 		"/J/Työt & Materiaalit/Projektit/IoT/Arduino/USK Guide Code/Circuit_06/Circuit_06.ino",
 		"/J/Työt & Materiaalit/Projektit/IoT/Arduino/SensorDashboard/SensorDashboard.ino",
-		"/J/Työt & Materiaalit/Projektit/IoT/Arduino/USK Guide Code/Circuit_07/Circuit_07.ino",
 		"/J/Työt & Materiaalit/Projektit/IoT/Arduino/SensorDashboard.ino",
 		"/J/Työt & Materiaalit/Projektit/IoT/Arduino/photoResistorRPGLED/photoResistorRPGLED.ino",
 		"/D/Ohjelmat/Sublime Text 3/Data/Packages/Arduino-like IDE/Default (Windows).sublime-keymap",
 		"/D/Ohjelmat/Sublime Text 3/Data/Packages/Default/Preferences.sublime-settings",
 		"/J/Työt & Materiaalit/Projektit/IoT/SensorDashboard/app/config.json",
 		"/J/Työt & Materiaalit/Projektit/IoT/SensorDashboard/app/serialApp.js",
-		"/J/Työt & Materiaalit/Projektit/IoT/SensorDashboard/app/server.js",
 		"/J/Työt & Materiaalit/Projektit/NodeJS/loginApp-own-tls/master.js",
 		"/J/Työt & Materiaalit/Projektit/NodeJS/loginApp-own-tls/mongojs_users.js",
 		"/J/Työt & Materiaalit/Projektit/NodeJS/loginApp-own-tls/config.json",
-		"/J/Työt & Materiaalit/Projektit/IoT/SensorDashboard/app/public/css/my.css",
 		"/J/Työt & Materiaalit/Projektit/IoT/SensorDashboard/app/public/d3/myd3",
-		"/J/Työt & Materiaalit/Projektit/IoT/SensorDashboard/app/public/main.html",
 		"/D/Ohjelmat/Sublime Text 3/Data/Packages/User/Default (Windows).sublime-keymap",
 		"/J/Työt & Materiaalit/Projektit/IoT/SensorDashboard/app/public/js/app.js",
 		"/D/Ohjelmat/Sublime Text 3/Data/Packages/User/Preferences.sublime-settings",
@@ -566,7 +579,7 @@
 	"folders":
 	[
 		{
-			"path": "J:\\Työt & Materiaalit\\Projektit\\IoT\\SensorDashboard\\app"
+			"path": "J:\\Työt & Materiaalit\\Projektit\\IoT\\SensorDashboard"
 		}
 	],
 	"groups":
@@ -577,27 +590,28 @@
 			[
 				{
 					"buffer": 0,
-					"file": "/J/Työt & Materiaalit/Projektit/IoT/Arduino/sensors/sensors.ino",
+					"file": "app/server.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1165,
+						"buffer_size": 992,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								443,
-								443
+								571,
+								571
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Arduino-like IDE/Arduino.tmLanguage"
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 72.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -605,32 +619,60 @@
 				},
 				{
 					"buffer": 1,
-					"file": "/J/Työt & Materiaalit/Projektit/IoT/Arduino/USK Guide Code/Circuit_07/Circuit_07.ino",
+					"file": "app/serialApp.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 6313,
+						"buffer_size": 815,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								5948,
-								5916
+								67,
+								36
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Arduino-like IDE/Arduino.tmLanguage",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
-						"translation.x": -0.0,
-						"translation.y": 3312.0,
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/config.json",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 128,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								111,
+								103
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
 					"type": "text"
 				}
 			]

@@ -21,14 +21,19 @@ app
 //SERIAL CONNECTIONS
 var serialApp = require('./serialApp.js');
 var serialPorts = [];
+
+//Get port connections based on config file
 for (var i = config.serialPorts.length - 1; i >= 0; i--) {
-	serialPorts.push(serialApp.serialPortConnection(config.serialPorts[i].name));
+	serialPorts.push(serialApp.serialPortConnection(config.serialPorts[i].name, config.serialPorts[i].baudrate));
 };
 
+//Create event listeners for data
 for (var i = serialPorts.length - 1; i >= 0; i--) {
 	serialPorts[i].on('data', onData);
 };
 
 function onData(data) {
-  console.log('data received: ' + data);
+  console.log(data);
 }
+
+// db

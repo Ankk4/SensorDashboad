@@ -1,68 +1,26 @@
-html,body, { 
-	height:100%;
-}
+html,body, { height:100%; }
+.page-wrapper { }
 .page-header {
-	background: #000;
-	margin    :0;
-	color     : #bfbfbf;
-	border    : none;
-	text-align: left;
+	background   : #222222;	
+	color        : #bfbfbf;
+	border       : none;
+	text-align   : left;
+	margin       : 0;
+	border-bottom: 2px solid black;	
 }
-.jumbotron {
-	background-image: url("/img/bestest.png");
-	background-size : cover;
-	color           : white;
-	text-align      : center;
-	margin-bottom   : 0px;
-}
-#sidebar {
-	z-index   : 1000;
-	position  : fixed;	
-	width     : 250px;
-	height    : 100%;
-	overflow-y: auto;
-	background: #111;
-	color     : #bfbfbf;
-	transition: all .4s ease 0s;
 
+#sidebar {
+	background-color: #111111;
+	height          : 100%;
+	width           : 200px;
+	position        : fixed;
+	margin-left     : -25px;
 }
-#sidebar .nav {
-	width         : 95%;
-	padding-bottom: 20px;
-	display: block;
+#sidebar .nav {	font-size: 1.2em; padding-top: 10px; }
+#sidebar .nav { color: red;}
+
+#content {
+	margin-left: 200px;
+	padding-top: 25px;
 }
-#sidebar li {
-	border        : 0 #f2f2f2 solid;
-	padding-top   : 20px;
-	font-size     : 1.5em;
-} 
-.nav>li>a:hover,
-.nav>li>a:focus {
-    text-decoration: bold;
-    background-color: none;
-}
-.content-wrapper {
-	position    : absolute;
-	padding     : 15px;
-	margin-left : 250px;
-	margin-right: -250px;
-}
-.footer {
-	position: absolute;
-	bottom  : 0;
-	width   : 100%;
-	margin  : 0;
-	padding : 0;
-}
-.navbar {
-	border-bottom : 0px;
-	padding-bottom: 0px;
-}
-.navbar-fixed-bottom {
-	margin : 0px;
-	padding: 0px;
-}
-.panel-footer {
-	background-color: black;
-	border          : none;
-}
+

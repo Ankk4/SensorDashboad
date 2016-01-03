@@ -10,32 +10,29 @@
 	<script type="text/javascript" src="d3/myd3.js"></script>
 	<title>Sensor Dashboard</title>
 </head>
-<body ng-controller = 'DashboardController as dashboard'>
+<body ng-controller = 'DashboardController as dashboard' data-spy="scroll" data-target="#sidebar">
 	<!-- Header -->
-	<div class="page-header">
+	<div class="page-header row">
 		<div class="container">
 			<h3>Welcome our new robot overlords</h3>
 			<p>You are already dead.
 		</div>
 	</div>
-	<div class="container-fluid page-wrapper">
-		<!-- Sidebar -->
-		<div class="col-lg-2 col-sm-2" id="sidebar" ng-show="true">
-			<ul class="nav nav-collaped nav-pills nav-stacked">
-				<li><a href="#Dashboard">Dashboard</a></li>
-				<li><a href="#RawData">Raw Data</a></li>
-				<li><a href="#Devices">Devices</a></li>
-				<li><a href="#Camera">Camera</a></li>
-				<li><a href="#About">About</a></li>
-			</ul>
-		</div>
-
-		<!-- Content -->
-		<div class="col-lg-9 col-sm-10" id="content">
-			<div ng-repeat='sensor in dashboard.sensors'>
-				<p>{{sensor}}</p>		
-			</div>	
-		</div>
+	<!-- Sidebar -->
+	<div class="col-xs-2 col-sm-3 col-md-3" id="sidebar">
+		<ul class="nav nav-stacked fixed">
+			<li><a href="#Dashboard">Dashboard</a></li>
+			<li><a href="#RawData">Raw Data</a></li>
+			<li><a href="#Devices">Devices</a></li>
+			<li><a href="#Camera">Camera</a></li>
+			<li><a href="#About">About</a></li>
+		</ul>
+	</div>
+	<!-- Content -->
+	<div class="container-fluid" id="content" col-xs-4 col-sm-4 col-md-4>
+		<div class="row col-xs-2 col-sm-3 col-md-6" ng-repeat='sensor in dashboard.sensors'>
+			<p>{{sensor}}</p>		
+		</div>	
 	</div>
 	<!-- Footer
 	<div class="navbar navbar-fixed-bottom footer row">

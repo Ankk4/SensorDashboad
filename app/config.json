@@ -2,6 +2,6 @@
 	"db_host"		: "192.168.0.15",
 	"db_port"		: "27018",
 	"serialPorts"	: [
-		{ "name": "/dev/ttyACM0" }
-	]
+		{ "name": "/dev/ttyACM0", "baudrate" : 9600 }
+	],
 }

@@ -4,10 +4,10 @@ var colors = require('colors');
 var serialPort = require('serialport');
 var SerialPort = serialPort.SerialPort; //localized
 
-function serialPortConnection (portname) {
+function serialPortConnection (portname, brate) {
 
   var myPort = new SerialPort(portname, {
-    baudrate: 9600,
+    baudrate: brate,
     parser:serialPort.parsers.readline("\r\n")
   });
 
@@ -28,4 +28,3 @@ function onOpen() {
   console.log('Serial port connections open.'.green);
 };
 module.exports.serialPortConnection = serialPortConnection;
-
