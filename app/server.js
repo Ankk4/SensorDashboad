@@ -2,9 +2,9 @@
 var fs = require('fs');
 var config = JSON.parse(fs.readFileSync("./config.json"));
 fs.watchFile("./config.json", function(current, previous) {
-	console.log("Config file changed!".Red);
+	console.log("Config file changed!");
 	config = JSON.parse(current);
-	console.log("New config file:\n ".green, config);
+	console.log("New config file:\n ", config);
 });
 
 // EXPRESS APP
@@ -12,10 +12,10 @@ var express = require('express'),
 	app		= express();
 
 app
-	.use(express.static(__dirname + '/public'))
+    .use(express.static(__dirname + '/public'))
 	.get('*', function (req, res) {
 		res.sendFile(__dirname + '/public/main.html');
-	})
+	 })
 	.listen(7000);
 
 //SERIAL CONNECTIONS
