@@ -1,0 +1,32 @@
+{
+  "name": "sensordashboard",
+  "version": "1.0.0",
+  "description": "web application to visualise arduino sensor data",
+  "main": "server.js",
+  "dependencies": {
+    "colors": "^1.1.2",
+    "express": "^4.13.3",
+    "serialport": "^2.0.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ankk4/SensorDashboard.git"
+  },
+  "keywords": [
+    "sensor",
+    "dashboard",
+    "arduino",
+    "MEAN"
+  ],
+  "author": "Antero Juutinen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ankk4/SensorDashboard/issues"
+  },
+  "homepage": "https://github.com/Ankk4/SensorDashboard#readme"
+}
