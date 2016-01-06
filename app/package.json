@@ -1,6 +1,7 @@
 {
   "name": "sensordashboard",
   "version": "1.0.0",
+  "private": true,
   "description": "web application to visualise arduino sensor data",
   "main": "server.js",
   "dependencies": {
