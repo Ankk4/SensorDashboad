@@ -1,15 +1,11 @@
-// CONFIG FILE
-var fs = require('fs');
-var config = JSON.parse(fs.readFileSync("./config.json"));
-fs.watchFile("./config.json", function(current, previous) {
-	console.log("Config file changed!");
-	config = JSON.parse(current);
-	console.log("New config file:\n ", config);
-});
-
-// EXPRESS APP
-var express = require('express'),
-	app		= express();
+var fs       = require('fs');
+var serial   = require('./serial.js');
+var express  = require('express');
+var	http     = require('http').Server(app);
+var	io       = require('socket.io')(http);
+var mongoose = require('mongoose');
+var	app      = express();
+var coms     = [];
 
 app
     .use(express.static(__dirname + '/public'))
@@ -19,8 +15,6 @@ app
 	.listen(7000);
 
 //SERIAL CONNECTIONS
-var serial = require('./serial.js');
-var coms = [];
 
 //Get port connections based on config file
 for (var i = config.serialPorts.length - 1; i >= 0; i--) {
@@ -37,3 +31,11 @@ function onData(data) {
 }
 
 // db
+
+// CONFIG FILE
+var config = JSON.parse(fs.readFileSync("./config.json"));
+fs.watchFile("./config.json", function(current, previous) {
+	console.log("Config file changed!");
+	config = JSON.parse(current);
+	console.log("New config file:\n ", config);
+});
