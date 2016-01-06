@@ -1,12 +1,12 @@
-var fs       = require('fs');
-var serial   = require('./serial.js');
-var express  = require('express');
-var	http     = require('http').Server(app);
-var	io       = require('socket.io')(http);
-var mongoose = require('mongoose');
-var	app      = express();
-var coms     = [];
+var fs         = require('fs');
+var serial     = require('./serial.js');
+var express    = require('express');
+var	http       = require('http').Server(app);
+var	io         = require('socket.io')(http);
+var mongoose   = require('mongoose');
 
+//Create the express app
+var	app        = express();
 app
     .use(express.static(__dirname + '/public'))
 	.get('*', function (req, res) {
@@ -15,8 +15,8 @@ app
 	.listen(7000);
 
 //SERIAL CONNECTIONS
-
 //Get port connections based on config file
+var coms       = [];
 for (var i = config.serialPorts.length - 1; i >= 0; i--) {
 	coms.push(serial.serialPortConnection(config.serialPorts[i].name, config.serialPorts[i].baudrate));
 };
