@@ -8,3 +8,8 @@ Work in progress.
 Run inside the app folder:
 
 ```npm install```
+
+##Todo:
+1. Routing between angular and express
+2. Socket.io realtime interaction
+3. MongoDB interactions
