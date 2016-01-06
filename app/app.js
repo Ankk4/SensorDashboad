@@ -15,10 +15,10 @@ fs.watchFile("./config.json", function(current, previous) {
 });
 
 //Create the express app
-var	app        = express();
+var	app = express();
 app
     .use(express.static(__dirname + '/public'))
-	.get('*', function (req, res) {
+	.get('/', function (req, res) {
 		res.sendFile(__dirname + '/public/main.html');
 	 })
 	.listen(7000);
