@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "description": "web application to visualise arduino sensor data",
-  "main": "server.js",
+  "main": "app.js",
   "dependencies": {
     "colors": "^1.1.2",
     "express": "^4.13.3",
