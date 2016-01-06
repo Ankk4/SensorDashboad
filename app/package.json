@@ -5,6 +5,7 @@
   "description": "web application to visualise arduino sensor data",
   "main": "app.js",
   "dependencies": {
+    "colors": "^1.1.2",
     "express": "^4.13.3",
     "mongoose": "^4.3.4",
     "serialport": "^2.0.6",
