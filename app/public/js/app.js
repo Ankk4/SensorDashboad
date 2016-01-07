@@ -16,6 +16,7 @@ app.controller('SidebarController', function(){
 
 });
 
+// DO THIS SERVER SIDE AS IN client.sensor = getServerSensorJson();
 var sensors = [
 	{
 		name: 'Tempeture',
