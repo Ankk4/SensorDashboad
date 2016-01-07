@@ -11,14 +11,14 @@ Run inside the app folder:
 
 After that manually install the serialport module:
 
-'''sudo npm install serialport --unsafe-perm'''
+```sudo npm install serialport --unsafe-perm```
 
 If the installation fails, make sure you have the following dependecies installed:
 - gcc -v 4.8 or higher
 - Python 2.7 (3.0 won't work!)
 - node-gyp nw-gyp node-pre-gyp
 
-'''sudo npm install -g node-gyp nw-gyp node-pre-gyp'''
+```sudo npm install -g node-gyp nw-gyp node-pre-gyp```
 
 ##Todo:
 1. Routing between angular and express
