@@ -24,3 +24,4 @@ If the installation fails, make sure you have the following dependecies installe
 1. Routing between angular and express
 2. Socket.io realtime interaction
 3. MongoDB interactions
+4. fix typos/clean
