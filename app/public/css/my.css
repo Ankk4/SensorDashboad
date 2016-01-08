@@ -22,8 +22,13 @@ html,body, { height:100%; }
 #sidebar .nav {	font-size: 1.2em; padding-top: 10px; }
 #sidebar .nav { color: red;}
 
-#content {
-	margin-left: 200px;
+#mainContent {
+    margin-left: -25px;
+	margin-left: 175px;
 	padding-top: 25px;
+}
+
+#mainContent div {
+    padding-bottom: 25px;
 }
 

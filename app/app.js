@@ -1,35 +1,37 @@
-var fs       = require('fs');
-var colors   = require('colors');
-var serial   = require('./serial.js');
-var express  = require('express');
-var	http     = require('http').Server(app);
-var	io       = require('socket.io')(http);
-var mongoose = require('mongoose');
+var fs       = require('fs'),
+    colors   = require('colors'),
+    serial   = require('./serial.js'),
+    express  = require('express'),
+    app      = express(),
+    server   = require('http').Server(app);
+    io       = require('socket.io')(server),
+    mongoose = require('mongoose');
 
-// CONFIG FILE
+// Config
 var config = JSON.parse(fs.readFileSync("./config.json"));
-fs.watchFile("./config.json", function(current, previous) {
+ fs.watchFile("./config.json", function(current, previous) {
 	console.log("Config file changed!");
 	config = JSON.parse(current);
 	console.log("New config file:\n ", config);
 });
 
-//Create the express app
-var	app = express();
+//Express and Sockets
 app
-    .use(express.static(__dirname + '/public'))
+	.use(express.static(__dirname + '/public'))
 	.get('/', function (req, res) {
 		res.sendFile(__dirname + '/public/main.html');
-	 })
-	.listen(7000);
-
-//Sockets
-io.on('connect', function(socket){
-	console.log('a user has connected'.green)
-	socket.on('disconnect', function (socket) {
-		console.log('a user has disconnected'.red);
 	});
-})
+server.listen(config.port, function(){
+    console.log("Webserver listening to: ".green + config.port);
+});
+io.on('connection', function(socket){
+    console.log('User connected'.gray);
+    socket.on('disconnect', function () {
+    	console.log('User disconnected'.gray);
+	});
+});
+
+io.emit('sensorData', { will: 'be received by everyone'});
 
 
 //Serial port connections
@@ -49,13 +51,14 @@ function onData(data) {
 		var o = JSON.parse(data);
 		if (o && typeof o === "object" && o !== null) {
 			//If indeed is JSON
-			console.log(colors.green(data));
+			//console.log(colors.green(data));
 		}
 	}
     catch (e) {
-    	console.log(colors.red(e));
+    	console.log("Data error: ".red + e);
     }
     return false;
 }
 
 // db
+

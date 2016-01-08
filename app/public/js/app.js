@@ -1,6 +1,7 @@
 var app = angular.module('dashboard', []);
-app.controller('DashboardController', function(){
+app.controller('DashboardController', function($scope){
 	this.sensors = sensors;
+    console.log($scope);
 });
 
 app.controller('SidebarController', function(){
@@ -30,7 +31,10 @@ var sensors = [
 	}
 ];
 
-
+var socket = io.connect();
+socket.on('sensorData', function (data) {
+	console.log(data);
+});
 	/*
 	<section class="tab" ng-controller="TabController as tab">
         <ul class="nav nav-pills">
