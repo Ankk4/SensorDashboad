@@ -1,5 +1,6 @@
-"use strict";
+'use strict';
 var fs       = require('fs'),
+	os		 = require('os'),
     colors   = require('colors'),
     serial   = require('./serial.js'),
     express  = require('express'),
@@ -9,11 +10,11 @@ var fs       = require('fs'),
     mongoose = require('mongoose');
 
 // Config
-var config = JSON.parse(fs.readFileSync("./config.json"));
- fs.watchFile("./config.json", function(current, previous) {
-	console.log("Config file changed!");
+var config = JSON.parse(fs.readFileSync('./config.json'));
+ fs.watchFile('./config.json', function(current, previous) {
+	console.log('Config file changed!');
 	config = JSON.parse(current);
-	console.log("New config file:\n ", config);
+	console.log('New config file:\n ', config);
 });
 
 //Express and Sockets
@@ -23,7 +24,7 @@ app
 		res.sendFile(__dirname + '/public/main.html');
 	});
 server.listen(config.port, function(){
-    console.log("Webserver listening to: ".green + config.port);
+    console.log('Webserver listening to: '.green + config.port);
 });
 io.on('connection', function(socket){
     console.log('User connected'.gray);
@@ -61,4 +62,18 @@ function onData(data) {
     return false;
 }
 */
+//https://nodejs.org/dist/latest-v5.x/docs/api/os.html
+//https://nodejs.org/api/process.html#process_process_uptime
+var systemData = {
+	'hostname' 		: '',
+	'arch'	   		: '',
+	'platform' 		: '',
+	'cpu-model'		: '',
+	'cpu-count'		: '',
+	'totalmemory'	: '',
+	'freememory'	: '',
+	'loadavg'		: '',
+	'systemuptime'	: '',
+	'appuptime'		: ''
+};
 
