@@ -4,7 +4,7 @@ var fs       = require('fs'),
     serial   = require('./serial.js'),
     express  = require('express'),
     app      = express(),
-    server   = require('http').Server(app);
+    server   = require('http').Server(app),
     io       = require('socket.io')(server),
     mongoose = require('mongoose');
 
