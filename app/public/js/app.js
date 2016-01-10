@@ -30,6 +30,10 @@ var sensors = [
 	{
 		name: 'Light level',
 		icon: ''
+	},
+		{
+		name: 'Moisture',
+		icon: ''
 	}
 ];
 

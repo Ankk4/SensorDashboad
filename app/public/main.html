@@ -18,20 +18,29 @@
 	</div>
 	<div class="container-fluid page-wrapper">
 		<!-- Sidebar -->
-		<div class="col-lg-2 col-sm-2" id="sidebar" ng-show="true">
+		<div class="col-sm-2" id="sidebar" ng-controller="SidebarController as sbCtrl">
 			<ul class="nav nav-collaped nav-pills nav-stacked">
-				<li><a href="#Dashboard">Dashboard</a></li>
-				<li><a href="#RawData">Raw Data</a></li>
-				<li><a href="#Devices">Devices</a></li>
-				<li><a href="#Camera">Camera</a></li>
-				<li><a href="#About">About</a></li>
+				<li ng-class="{ active: sbCtrl.isSelected(1) }">
+					<a href="#Dashboard" ng-click="sbCtrl.selectTab(1)">Dashboard</a>
+				</li>
+				<li ng-class="{ active: sbCtrl.isSelected(2) }">
+					<a href="#RawData" ng-click="sbCtrl.selectTab(2)">Raw Data</a>
+				</li>
+				<li ng-class="{ active: sbCtrl.isSelected(3) }">
+					<a href="#Devices" ng-click="sbCtrl.selectTab(3)">Devices</a>
+				</li>
+				<li ng-class="{ active: sbCtrl.isSelected(4) }">
+					<a href="#Camera" ng-click="sbCtrl.selectTab(4)">Camera</a>
+				</li>
+				<li ng-class="{ active: sbCtrl.isSelected(5) }">
+					<a href="#About" ng-click="sbCtrl.selectTab(5)">About</a>
+				</li>
 			</ul>
 		</div>
-
 		<!-- Content -->
-		<div class="col-lg-9 col-sm-10" id="mainContent">
+		<div class="row" id="mainContent">
             <div> 
-				<div class="col-lg-4 col-lg-5 col-sm-6" data-ng-repeat="sensor in dashboard.sensors">{{sensor}}</div>
+				<div class="col-md-6 col-sm-12" data-ng-repeat="sensor in dashboard.sensors">{{sensor}}</div>
 			</div>
 		</div>
 	</div>

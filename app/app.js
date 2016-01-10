@@ -34,7 +34,7 @@ io.on('connection', function(socket){
 
 io.emit('sensorData', { will: 'be received by everyone'});
 
-
+/*
 //Serial port connections
 //Get port connections based on config file
 var coms = [];
@@ -60,6 +60,5 @@ function onData(data) {
     }
     return false;
 }
-
-// db
+*/
 
