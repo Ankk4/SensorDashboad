@@ -35,9 +35,10 @@ io.on('connection', function(socket){
 
 io.emit('sensorData', { will: 'be received by everyone'});
 
-/*
+
 //Serial port connections
 //Get port connections based on config file
+
 var coms = [];
 for (var i = config.serialPorts.length - 1; i >= 0; i--) {
 	coms.push(serial.serialPortConnection(config.serialPorts[i].name, config.serialPorts[i].baudrate));
@@ -53,7 +54,7 @@ function onData(data) {
 		var o = JSON.parse(data);
 		if (o && typeof o === "object" && o !== null) {
 			//If indeed is JSON
-			//console.log(colors.green(data));
+		    console.log(colors.green(data));
 		}
 	}
     catch (e) {
@@ -61,7 +62,8 @@ function onData(data) {
     }
     return false;
 }
-*/
+
+
 //https://nodejs.org/dist/latest-v5.x/docs/api/os.html
 //https://nodejs.org/api/process.html#process_process_uptime
 var systemData = {
