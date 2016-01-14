@@ -12,7 +12,7 @@ var config = JSON.parse(fs.readFileSync('./config.json'));
 });
 
 // MQTT
-var client  = mqtt.connect(config.broker, { clientId: 'arduino001-', clean: false });
+var client  = mqtt.connect(config.broker, { clientId: config.clientID + '-', clean: false });
 
 client.on('connect', function () {
 	console.log("Connected to broker: ".green + config.broker);
@@ -41,7 +41,7 @@ function onData(data) {
 		var o = JSON.parse(data);
 		if (o && typeof o === "object" && o !== null) {
 			//If indeed is JSON
-		    client.publish('arduino', data, { qos: 1 }, function () {
+		    client.publish(config.publish, data, { qos: 1 }, function () {
 		    	console.log("Data published");
 		    });
 		}
