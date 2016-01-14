@@ -2,12 +2,12 @@
 var fs       = require('fs'),
 	os		 = require('os'),
     colors   = require('colors'),
-    serial   = require('./serial.js'),
     express  = require('express'),
     app      = express(),
     server   = require('http').Server(app),
     io       = require('socket.io')(server),
-    mongoose = require('mongoose');
+    mongoose = require('mongoose'),
+    mqtt 	 = require('mqtt');
 
 // Config
 var config = JSON.parse(fs.readFileSync('./config.json'));
@@ -23,9 +23,11 @@ app
 	.get('/', function (req, res) {
 		res.sendFile(__dirname + '/public/main.html');
 	});
+
 server.listen(config.port, function(){
     console.log('Webserver listening to: '.green + config.port);
 });
+
 io.on('connection', function(socket){
     console.log('User connected'.gray);
     socket.on('disconnect', function () {
@@ -35,34 +37,15 @@ io.on('connection', function(socket){
 
 io.emit('sensorData', { will: 'be received by everyone'});
 
-
-//Serial port connections
-//Get port connections based on config file
-
-var coms = [];
-for (var i = config.serialPorts.length - 1; i >= 0; i--) {
-	coms.push(serial.serialPortConnection(config.serialPorts[i].name, config.serialPorts[i].baudrate));
-};
-
-//Create event listeners for data
-for (var i = coms.length - 1; i >= 0; i--) {
-	coms[i].on('data', onData);
-};
-
-function onData(data) {
-	try {
-		var o = JSON.parse(data);
-		if (o && typeof o === "object" && o !== null) {
-			//If indeed is JSON
-		    console.log(colors.green(data));
-		}
-	}
-    catch (e) {
-    	console.log("Data error: ".red + e);
-    }
-    return false;
-}
-
+// MQTT
+var client  = mqtt.connect(config.broker, { clientId: 'MAIN-', clean: false }); 
+client.on('connect', function () {
+	console.log("Connected to broker: ".green + config.broker);
+	client.subscribe('arduino', { qos: 1 });
+});
+client.on('message', function (topic, message) {  
+	console.log('Received message:',  message.toString());
+});
 
 //https://nodejs.org/dist/latest-v5.x/docs/api/os.html
 //https://nodejs.org/api/process.html#process_process_uptime

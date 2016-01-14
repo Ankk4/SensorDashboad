@@ -1,0 +1,16 @@
+{
+  "name": "mqtt-client",
+  "version": "1.0.0",
+  "description": "mqtt-client for arduinos connected by serialport",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "antero juutinen",
+  "license": "ISC",
+  "dependencies": {
+    "amqplib": "^0.4.0",
+    "colors": "^1.1.2",
+    "mqtt": "^1.6.3"
+  }
+}
