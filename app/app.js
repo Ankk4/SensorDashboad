@@ -41,7 +41,6 @@ io.emit('sensorData', sensorData);
 
 // MQTT
 var client  = mqtt.connect(config.broker, { clientId: config.clientId + '-', clean: false }); 
-
 client.on('connect', function () {
 	console.log("Connected to broker: ".green + config.broker);
 	if(config.subscribeAll == true) {

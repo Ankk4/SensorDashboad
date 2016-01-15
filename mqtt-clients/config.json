@@ -1,8 +1,12 @@
 {
     "broker"      	: "mqtt://192.168.202.79:1883",
+    "clientId"		: "arduino1",
     "subscriptions"	: [
 	],
+	"publish"		: [
+		{ "name" 	: "arduino", "qos" : 1}
+	],
 	"serialPorts"	: [
-		{ "name": "/dev/ttyACM0", "baudrate" : 9600 }
+		{ "name": "/dev/ttyACM1", "baudrate" : 9600 }
 	]
 }
