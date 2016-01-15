@@ -9,6 +9,6 @@
 		{ "topic"	: "arduino" }
 	],
 	"publish"		: [
-		{ "name" 	: "", "qos" : }
+		{ "name" 	: "", "qos" : 1}
 	]
 }
