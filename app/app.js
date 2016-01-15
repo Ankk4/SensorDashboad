@@ -9,6 +9,8 @@ var fs       = require('fs'),
     mongoose = require('mongoose'),
     mqtt 	 = require('mqtt');
 
+var sensorData = [];
+
 // Config
 var config = JSON.parse(fs.readFileSync('./config.json'));
  fs.watchFile('./config.json', function(current, previous) {
@@ -38,15 +40,24 @@ io.on('connection', function(socket){
 io.emit('sensorData', sensorData);
 
 // MQTT
-var client  = mqtt.connect(config.broker, { clientId: 'MAIN-', clean: false }); 
+var client  = mqtt.connect(config.broker, { clientId: config.clientId + '-', clean: false }); 
+
 client.on('connect', function () {
 	console.log("Connected to broker: ".green + config.broker);
-	client.subscribe('arduino', { qos: 1 });
+	if(config.subscribeAll == true) {
+		client.subscribe('#', { qos: 1 });
+	}
+	else {
+		for (var i = config.subscriptions.length - 1; i >= 0; i--) {
+			client.subscribe(config.subscriptions[i], { qos: 1 });
+		}
+	}
 });
+
 client.on('message', function (topic, message) { 
 	sensorData = JSON.parse(message);
 });
-var sensorData = [];
+
 //https://nodejs.org/dist/latest-v5.x/docs/api/os.html
 //https://nodejs.org/api/process.html#process_process_uptime
 var systemData = {

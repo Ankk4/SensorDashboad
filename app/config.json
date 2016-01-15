@@ -2,5 +2,11 @@
     "port"      	: 7000,
 	"dbhost"		: "192.168.0.15",
 	"dbport" 		: "27018",
-	"broker"      	: "mqtt://192.168.202.79"
+	"broker"      	: "mqtt://192.168.202.79",
+	"clientId"		: "SensorDashboard",
+	"subscribeAll"	: true,
+	"subscriptions"	: [
+		{ "topic"	: "arduino" }
+	]
+
 }
