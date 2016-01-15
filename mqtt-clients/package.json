@@ -9,8 +9,6 @@
   "author": "antero juutinen",
   "license": "ISC",
   "dependencies": {
-    "amqplib": "^0.4.0",
-    "colors": "^1.1.2",
     "mqtt": "^1.6.3"
   }
 }

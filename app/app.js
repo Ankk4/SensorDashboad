@@ -35,7 +35,7 @@ io.on('connection', function(socket){
 	});
 });
 
-io.emit('sensorData', { will: 'be received by everyone'});
+io.emit('sensorData', sensorData);
 
 // MQTT
 var client  = mqtt.connect(config.broker, { clientId: 'MAIN-', clean: false }); 
@@ -43,10 +43,10 @@ client.on('connect', function () {
 	console.log("Connected to broker: ".green + config.broker);
 	client.subscribe('arduino', { qos: 1 });
 });
-client.on('message', function (topic, message) {  
-	console.log('Received message:',  message.toString());
+client.on('message', function (topic, message) { 
+	sensorData = JSON.parse(message);
 });
-
+var sensorData = [];
 //https://nodejs.org/dist/latest-v5.x/docs/api/os.html
 //https://nodejs.org/api/process.html#process_process_uptime
 var systemData = {
