@@ -55,6 +55,7 @@ client.on('connect', function () {
 
 client.on('message', function (topic, message) { 
 	sensorData = JSON.parse(message);
+	console.log(sensorData);
 });
 
 //https://nodejs.org/dist/latest-v5.x/docs/api/os.html
