@@ -5,7 +5,9 @@
   "description": "web application to visualise arduino sensor data",
   "main": "app.js",
   "dependencies": {
+    "body-parser": "^1.14.2",
     "colors": "^1.1.2",
+    "cookie-parser": "^1.4.1",
     "express": "^4.13.3",
     "mongoose": "^4.3.4",
     "mqtt": "^1.6.3",

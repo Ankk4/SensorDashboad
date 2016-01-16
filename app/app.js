@@ -1,13 +1,18 @@
 'use strict';
-var fs       = require('fs'),
-	os		 = require('os'),
-    colors   = require('colors'),
-    express  = require('express'),
-    app      = express(),
-    server   = require('http').Server(app),
-    io       = require('socket.io')(server),
-    mongoose = require('mongoose'),
-    mqtt 	 = require('mqtt');
+var fs      	= require('fs'),
+	os 			= require('os'),
+    colors   	= require('colors'),
+    mongoose 	= require('mongoose'),
+    mqtt 	 	= require('mqtt'),
+    express  	= require('express'),
+    path		= require('path'),
+    cookieParser= require('cookie-parser'),
+    bodyParser 	= require('body-parser');
+
+// Socket.IO binding to express
+var app 	= express(),
+    server  = require('http').Server(app),
+    io     	= require('socket.io')(server);
 
 var sensorData = [];
 
@@ -19,17 +24,26 @@ var config = JSON.parse(fs.readFileSync('./config.json'));
 	console.log('New config file:\n ', config);
 });
 
-//Express and Sockets
+//Express Middleware
 app
-	.use(express.static(__dirname + '/public'))
-	.get('/', function (req, res) {
-		res.sendFile(__dirname + '/public/main.html');
-	});
+	.use(bodyParser.json())
+	.use(bodyParser.urlencoded({extended: true}))
+	.use(cookieParser())
+	.use(express.static(path.join(__dirname, 'public')));
+
+app.get('/', function (req, res) {
+	res.sendFile(__dirname + '/public/main.html')
+});
+//404 if routes not found (must be last one)
+app.use(function(req, res, next) {
+	res.status(404).send('Page not found');
+});
 
 server.listen(config.port, function(){
     console.log('Webserver listening to: '.green + config.port);
 });
 
+// Socket connections and emits
 io.on('connection', function(socket){
     console.log('User connected'.gray);
     socket.on('disconnect', function () {
@@ -43,12 +57,13 @@ io.emit('sensorData', sensorData);
 var client  = mqtt.connect(config.broker, { clientId: config.clientId + '-', clean: false }); 
 client.on('connect', function () {
 	console.log("Connected to broker: ".green + config.broker);
-	if(config.subscribeAll == true) {
-		client.subscribe('#', { qos: 1 });
+	if(config.subscribeAll === true) {
+		client.subscribe('sensors/#', { qos: 1 });
 	}
 	else {
 		for (var i = config.subscriptions.length - 1; i >= 0; i--) {
 			client.subscribe(config.subscriptions[i], { qos: 1 });
+			console.log(config.subscriptions[i]);
 		}
 	}
 });
