@@ -10,7 +10,6 @@
 		"sensor/arduino02/lightlevel"
 	],
 	"publish"		: [
-		"some-topic",
-		"some-topic2"
+		"some-topic"
 	]
 }

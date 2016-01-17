@@ -17,8 +17,8 @@ var app 	= express(),
 var sensorData = [];
 
 // Config
-var config = JSON.parse(fs.readFileSync('./config.json'));
- fs.watchFile('./config.json', function(current, previous) {
+var config = JSON.parse(fs.readFileSync(__dirname + '/config.json'));
+ fs.watchFile(__dirname + '/config.json', function(current, previous) {
 	console.log('Config file changed!');
 	config = JSON.parse(current);
 	console.log('New config file:\n ', config);
@@ -46,12 +46,18 @@ server.listen(config.port, function(){
 // Socket connections and emits
 io.on('connection', function(socket){
     console.log('User connected'.gray);
+	io.emit('sensorData', sensorData);
+
+	socket.on('getData', function (from, msg) {
+    	console.log('Sending data to ', from);
+    	socket.emit('sensorData', sensorData);
+ 	});
+
     socket.on('disconnect', function () {
     	console.log('User disconnected'.gray);
 	});
 });
 
-io.emit('sensorData', sensorData);
 
 // MQTT
 var client  = mqtt.connect(config.broker, { clientId: config.clientId + '-', clean: false }); 
