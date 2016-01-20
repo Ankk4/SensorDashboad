@@ -4,7 +4,7 @@
     "subscriptions"	: [
 	],
 	"publish"		: [
-		{ "name" 	: "arduino", "qos" : 1}
+		{ "name" 	: "sensors/kasvihuone/dev01", "qos" : 1}
 	],
 	"serialPorts"	: [
 		{ "name": "/dev/ttyACM1", "baudrate" : 9600 }

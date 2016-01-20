@@ -1,7 +1,7 @@
 var mqtt = require('mqtt');
 
-var client  = mqtt.connect('mqtt://192.168.0.15',  { 
-	clientId: 'testClient3-', 
+var client  = mqtt.connect('mqtt://192.168.202.79',  { 
+	clientId: 'testSubClient-', 
 	clean: false 
 });
 

@@ -2,12 +2,12 @@
     "port"      	: 7000,
 	"dbhost"		: "192.168.0.15",
 	"dbport" 		: "27018",
-	"broker"      	: "mqtt://192.168.15.79",
+	"broker"      	: "mqtt://192.168.202.79",
 	"clientId"		: "SensorDashboard",
-	"subscribeAll"	: false,
+	"subscribeAll"	: true,
 	"subscriptions"	: [
-		"sensor/arduino01/temperature",
-		"sensor/arduino02/lightlevel"
+		"sensor/kasvihuone/dev01",
+		"sensor/kasvihuone/dev02"
 	],
 	"publish"		: [
 		"some-topic"

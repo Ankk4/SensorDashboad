@@ -1,8 +1,8 @@
 // Require the MQTT module as dependency
 // Connect to the broker - clientId is connected to a queue
 var mqtt 	= require('mqtt');
-var client  = mqtt.connect('mqtt://192.168.0.15:1883', { 
-	clientId: 'testClient2-', 
+var client  = mqtt.connect('mqtt://192.168.202.79:1883', { 
+	clientId: 'testPubClient-', 
 	clean: false
 });
 
