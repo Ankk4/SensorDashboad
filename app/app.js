@@ -34,6 +34,7 @@ app
 app.get('/', function (req, res) {
 	res.sendFile(__dirname + '/public/main.html')
 });
+
 //404 if routes not found (must be last one)
 app.use(function(req, res, next) {
 	res.status(404).send('Page not found');

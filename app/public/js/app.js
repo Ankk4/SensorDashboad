@@ -19,9 +19,10 @@ app.controller('SidebarController', function(){
 	}
 });
 
+// SOCKETS
 socket.on('sensorData', function (data) {
 	sensors = data;
-	console.log('Got new data');
+	console.log('Got new data', data);
 });
 socket.on('message', function (message) {
 	console.log(message);
@@ -30,3 +31,14 @@ socket.on('message', function (message) {
 function getData() {
 	socket.emit('getData');
 }
+
+$(document).ready(function(){
+	console.log("When is this even");
+	Chartist.Line('.ct-chart', {
+		labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri'],
+	  	series: [[0, 3, 2, 8, 9], [1, 2, 3, 5, 8]]
+	}, {
+		width: '300px',
+		height: '200px'
+	});
+});
