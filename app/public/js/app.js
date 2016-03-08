@@ -1,10 +1,10 @@
 "use strict";
 var app = angular.module('dashboard', []);
 var socket = io.connect();
-var sensors = [];
+var sensorData = [];
 
 app.controller('DashboardController', function($scope){
-	this.sensors = sensors;
+	this.sensorData = sensorData;
     console.log($scope);
 });
 
@@ -21,7 +21,7 @@ app.controller('SidebarController', function(){
 
 // SOCKETS
 socket.on('sensorData', function (data) {
-	sensors = data;
+	sensorData += data;
 	console.log('Got new data', data);
 });
 socket.on('message', function (message) {
@@ -31,14 +31,3 @@ socket.on('message', function (message) {
 function getData() {
 	socket.emit('getData');
 }
-
-$(document).ready(function(){
-	console.log("When is this even");
-	Chartist.Line('.ct-chart', {
-		labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri'],
-	  	series: [[0, 3, 2, 8, 9], [1, 2, 3, 5, 8]]
-	}, {
-		width: '300px',
-		height: '200px'
-	});
-});

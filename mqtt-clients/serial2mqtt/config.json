@@ -1,0 +1,18 @@
+{
+    "broker"      	: "mqtt://172.31.17.19",
+    "clientId"		: "DC-arduino1",
+    "subscriptions"	: [
+    	{"topic" 	: "DC/arduino1/"}
+	],
+	"publish"		: [
+		{ "topic" 	: "DC/arduino1/sensors/temperature", "qos" : 1},
+		{ "topic" 	: "DC/arduino1/sensors/lux", "qos" : 1}
+	],
+	"serialPorts"	: [
+		{ "name"	: "/dev/ttyACM0", "baudrate" : 9600 }
+	],
+	"sensors"		: [
+		{ "name"	: "temperature"},
+		{ "name"	: "lux"}
+	]
+}

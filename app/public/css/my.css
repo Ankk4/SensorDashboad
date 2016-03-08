@@ -26,9 +26,10 @@ html,body, { height:100%;}
 .active a { color: white !important; font-color: white; }
 
 #mainContent {
-	margin-left: -25px;
-	margin-left: 175px;
-	padding-top: 25px;
+	margin-left : -25px;
+	margin-left : 175px;
+	margin-right: 175px;
+	padding-top : 25px;
 }
 
 #mainContent div {

@@ -6,10 +6,10 @@
 	<!-- CSS -->
 	<link href ="css/bootstrap.min.css" rel="stylesheet">
 	<link href ="css/my.css" 			rel="stylesheet">
-	<link href ="css/chartist.min.css" 	rel="stylesheet">	
+	<link href ="css/chartist.min.css" 	rel="stylesheet">
 	<!-- JS -->	
-	<script type ="text/html" src="js/respond.min.js"></script>
-	<script type ="text/html" src="js/chartist.min.js"></script>	 	
+	<script	src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js"></script>
+
 	<title>Sensor Dashboard</title>
 </head>
 <body ng-controller="DashboardController as dashboard">
@@ -45,17 +45,18 @@
 		-->
 		<!-- Content -->
 		<div class="row" id="mainContent">
-			<div class="ct-chart"></div>
+			<div class="ct-chart ct-perfect-fourth temp-chart"></div>
 			<div class="col-md-6 col-sm-12" data-ng-repeat="sensor in dashboard.sensors">
 				{{sensors}}
 			</div>
 		</div>
 	</div>
 	<!-- JS -->	
-	<script type ="text/html" src="js/chartist.min.js"></script>
+	<script type ="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/chartist/0.9.5/chartist.min.js"></script> 
+	<script type="text/javascript" src="js/charts.js"></script>
 	<script type ="text/javascript" src="js/jquery.js"></script>	
 	<script type ="text/javascript" src="js/bootstrap.min.js"></script>
-	<script type ="text/javascript" src="/socket.io/socket.io.js"></script>	
+	<script type ="text/javascript" src="socket.io/socket.io.js"></script>	
 	<script type ="text/javascript" src="js/angular.min.js"></script>	
 	<script type ="text/javascript" src="js/app.js"></script>
 </body>
